@@ -1,0 +1,67 @@
+:root {
+  /*Primary*/
+  --Dark-cyan: hsl(158, 36%, 37%);
+  --Cream: hsl(30, 38%, 92%);
+  /*Neutral*/
+  --Very-dark-blue: hsl(212, 21%, 14%);
+  --Dark-grayish-blue: hsl(228, 12%, 48%);
+  --White: hsl(0, 0%, 100%);
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  background-color: var(--Cream);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  background-color: var(--White);
+  /* height: 25rem;
+  width: 534px; */
+  display: flex;
+  max-height: 25rem;
+  border-radius: .5rem;
+}
+
+.product-img {
+  height: 25rem;
+  width: 16.6875rem;
+  border-top-left-radius: .5rem;
+  border-bottom-left-radius: .5rem;
+}
+
+.product-info {
+  box-sizing: border-box;
+  width: 16.6875rem;
+  display: flex;
+  flex-direction: column;
+  padding: 1.75rem;
+}
+
+.product-description {
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+}
+
+.product-price-before {
+  text-decoration: line-through;
+}
+
+.product-type,
+.product-description,
+.product-price-before {
+  color: var(--Dark-grayish-blue);
+  font-family: 'Montserrat', sans-serif;
+}
+
+.product-name,
+.product-price-now {
+  font-family: 'Fraunces', serif;
+}
+
+.product-name {
+  font-size: 2rem;
+}
